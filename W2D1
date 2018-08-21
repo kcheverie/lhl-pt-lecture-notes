@@ -1,0 +1,49 @@
+**CSS** stands for **C**ascading **S**tyle **S**heets. It's how we change the look and feel of our HTML markup.
+
+A CSS Rule consists of selector, a property and a value. It looks like this:
+
+```
+selector {
+  property: value;
+}
+
+```
+
+The **selector** is the element we want to style (such as "h1"). The **property** is one aspect of the element we want to change ("color") and the **value** is the value of that property ("red");
+
+Our browsers come with some basic styling for elements, but we usually want to override these with our own styles. To do this, we create a `.css` file and link it in the `<head>` of our HTML file like this:
+
+```
+<head>
+  <link rel=”stylesheet” href=”styles.css”>
+</head>
+```
+
+There are a few different ways we can select an element.
+
+This will select all `<p>` tags
+```
+p {...}
+```
+
+This will select all `<p>` tags nested inside an `<article>` tag
+
+```
+article p {...}
+```
+
+We can get even more specific and select by class or ID. This is how we would select the following elements in CSS.
+
+```
+<p class="first">first paragraph</p>
+<p id="second">second paragraph</p>
+
+.first {...}
+#second {...}
+```
+
+There are way too many CSS properties to memorize (checkout [this](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) reference), but there are a few you will probably use a lot, like `display`, `padding`, `margin`, `color`, `font-size` and `border`.
+
+Get friendly with the Chrome Inspector when you're working on CSS - it's the best way to debug and try out styles before commiting them to your code!
+
+Here's a link to this week's slides - be sure to click through the presentation notes for some great links to CSS resources, including the CSS Zen Garden examplei showed in class: https://docs.google.com/presentation/d/1hbKFzksSWTZ0QwzlX_EETa-rBTdqE0WGNBsTBADs50U/edit?usp=sharing
